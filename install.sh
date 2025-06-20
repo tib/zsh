@@ -6,6 +6,8 @@ brew update && brew upgrade && brew cleanup && brew doctor
 
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# install zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
@@ -16,7 +18,6 @@ brew install gh
 brew install ffmpeg
 brew install yt-dlp
 brew install ollama
-brew install zsh-autosuggestions
 
 brew install --cask arc
 brew install --cask 1password
