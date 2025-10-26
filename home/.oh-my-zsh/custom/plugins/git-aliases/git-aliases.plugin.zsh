@@ -173,6 +173,7 @@ alias ga="git.branch.all"
 function gf { git.branch.create "feature/$1"; }
 function gfx { git.branch.create "fix/$1"; }
 alias p="gp"
+alias c="gc"
 
 
 

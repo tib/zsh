@@ -19,5 +19,5 @@ Add this to `crontab -e` to auto update brew:
 ```sh
 MAILTO=""
    
-0 8 * * * /opt/homebrew/bin/brew update && /opt/homebrew/bin/brew upgrade && /opt/homebrew/bin/brew cleanup && /opt/homebrew/bin/brew doctor
+0 8 * * * /opt/homebrew/bin/brew update && /opt/homebrew/bin/brew upgrade && /opt/homebrew/bin/brew cleanup --prune=all && /opt/homebrew/bin/brew doctor
 ```

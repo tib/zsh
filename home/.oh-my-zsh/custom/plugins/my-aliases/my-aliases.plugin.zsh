@@ -15,7 +15,7 @@ function qrcode() {
     qrencode -s 6 -l H -o "$1.png" "$1"
 }
 
-alias brew.up='brew update && brew upgrade && brew cleanup && brew doctor'
+alias brew.up='brew update && brew upgrade && brew cleanup --prune=all && brew doctor'
 
 alias xcode.normal='sudo xcode-select -s /Applications/Xcode.app/Contents/Developer/'
 alias xcode.beta='sudo xcode-select -s /Applications/Xcode-beta.app/Contents/Developer/'
