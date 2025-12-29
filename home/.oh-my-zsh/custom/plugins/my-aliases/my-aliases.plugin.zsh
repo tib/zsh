@@ -1,4 +1,6 @@
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
+alias z='zed .'
+
 
 function ytid() {
   echo "$1" | sed -E 's|.*/||'

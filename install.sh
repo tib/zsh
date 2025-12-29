@@ -23,11 +23,12 @@ brew install --cask arc
 brew install --cask 1password
 brew install --cask notion
 brew install --cask notion-calendar
-brew install --cask spotify
+#brew install --cask spotify
 brew install --cask freetube
 brew install --cask discord
 brew install --cask messenger
 brew install --cask appcleaner
+brew install --cask zed
 #brew install --cask zed@preview
 brew install --cask transmission
 brew install --cask nightfall
@@ -35,9 +36,9 @@ brew install --cask vlc
 brew install --cask webex
 brew install --cask omnidisksweeper
 brew install --cask docker
-brew install --cask chatgpt
+#brew install --cask chatgpt
 brew install --cask slack
-brew install --cask visual-studio-code
+#brew install --cask visual-studio-code
 
 xattr -d com.apple.quarantine /Applications/FreeTube.app
 
