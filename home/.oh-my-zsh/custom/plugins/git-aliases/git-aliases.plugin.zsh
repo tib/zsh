@@ -140,7 +140,7 @@ alias git.fetch="git fetch"
 alias git.fetch.upstream="git fetch upstream"
 
 alias git.pull="git pull"
-alias git.prune="git fetch --prune origin"
+
 
 function git.pull.request {
     #flow:
@@ -174,7 +174,8 @@ function gf { git.branch.create "feature/$1"; }
 function gfx { git.branch.create "fix/$1"; }
 alias p="gp"
 alias c="gc"
+alias ghvim="gh config set editor vim"
 
-
-
-
+alias git.prune.remote="git fetch --prune origin"
+alias git.prune.local="git branch | grep -v "main" | xargs git branch -D"
+alias git.prune="git.checkout.main && git.prune.remote && git.prune.local"
